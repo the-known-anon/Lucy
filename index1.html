@@ -1,0 +1,58 @@
+<html>
+<head>
+  <title>Lucy Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+<body>
+
+  <div id="login_div" class="main-div" >
+    <div id = "cont" style="width: 60%; float:right">
+      <br>
+      <br>
+      <br>
+      <center><h3>Sign In</h3></center>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <a href = "history.html"><button onclick="login()">Login to Account</button></a>
+  </div>
+    <div id = "sidey" class="bgimg" style="width: 40%; float:left">
+      <h2>Lucy</h2>
+      <h4>Your virtual caretaker</h4>
+      <p></p>
+      <div class="img-btn">
+        <span class="m-up">Sign Up</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para"></p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var firebaseConfig = {
+      apiKey: "AIzaSyBaDpXxwcEsN-sRmLpJ-MZaauBfZqWUINw",
+      authDomain: "hhhhfeio.firebaseapp.com",
+      databaseURL: "https://hhhhfeio-default-rtdb.firebaseio.com",
+      projectId: "hhhhfeio",
+      storageBucket: "hhhhfeio.appspot.com",
+      messagingSenderId: "46103368288",
+      appId: "1:46103368288:web:30283189c1b15ee4726905"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
